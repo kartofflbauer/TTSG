@@ -1,0 +1,4 @@
+{
+  "max_fleet_points": 1500,
+  "notes": "Tune max_fleet_points and optional caps as your rules evolve."
+}

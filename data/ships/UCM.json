@@ -1,0 +1,169 @@
+{
+  "faction_id": "UCM",
+  "faction_name": "United Colonies of Mankind",
+  "ships": [
+    {
+      "id": "UCM-Dehli",
+      "name": "Dehli",
+      "faction": "UCM",
+      "class": "Battleship",
+      "points": 250,
+      "tonnage": "S",
+      "group_size": "1",
+      "scan": 8,
+      "signature": 10,
+      "thrust": 6,
+      "hull": 100,
+      "shields": { "front": 30, "side": 20, "rear": 10 },
+      "armor": { "front": 18, "side": 17, "rear": 14 },
+      "pd": 10,
+      "evasion": -1,
+      "defense_tokens": {"brace": 1, "redirect": 2, "contain": 1},
+      "launch_assets": {"Bulk Landers": 4},
+      "special_rules": ["Launch"],
+      "weapon_mounts": [
+        {
+          "weapon_id": "UF-4200 Mass Drivers",
+          "mount_name": "Dual UF-4200 Mass Drivers Port",
+          "count": 1,
+          "arc": "F/S(L)",
+          "added_keywords": ["Linked-1", "Fusillade"],
+          "overrides": {
+            "attacks": 16,
+            "notes": "double turrets - double shots"
+          }
+        },
+        {
+          "weapon_id": "UF-4200 Mass Drivers",
+          "mount_name": "Dual UF-4200 Mass Drivers Starboard",
+          "count": 1,
+          "arc": "F/S(R)",
+          "added_keywords": ["Linked-1", "Fusillade"],
+          "overrides": {
+            "attacks": 16,
+            "notes": "double turrets - double shots"
+          }
+        },
+        {
+          "weapon_id": "UF-6400 Mass Drivers",
+          "mount_name": "UF-6400 Mass Driver",
+          "count": 1,
+          "arc": "F/S",
+          "added_keywords": {},
+          "overrides": {}
+        },
+        {
+          "weapon_id": "Shark Missile Bays",
+          "mount_name": "Shark Missile Bays",
+          "count": 1,
+          "arc": "F/S/R",
+          "added_keywords": ["Close Action"],
+          "overrides": {}
+        }
+      ],
+      "tags": ["Battleship", "Mass Drivers", "Turrets", "Bulk Landers", "UCM", "Tank"]
+    },
+    {
+      "id": "UCM-Moscow",
+      "name": "Moscow",
+      "faction": "UCM",
+      "class": "Heavy Cruiser",
+      "points": 150,
+      "tonnage": "H",
+      "group_size": "1",
+      "scan": 6,
+      "signature": 6,
+      "thrust": 7,
+      "hull": 65,
+      "shields": { "front": 20, "side": 16, "rear": 6 },
+      "armor": { "front": 16, "side": 15, "rear": 13 },
+      "pd": 5,
+      "evasion": 0,
+      "defense_tokens": {"brace": 1, "redirect": 1, "contain": 2},
+      "launch_assets": {},
+      "special_rules": {},
+      "weapon_mounts": [
+        {
+          "weapon_id": "UF-4200 Mass Drivers",
+          "mount_name": "UF-4200 Mass Driver Turret Port",
+          "count": 1,
+          "arc": "F/S(L)",
+          "added_keywords": ["Linked-1"],
+          "overrides": {}
+        },
+        {
+          "weapon_id": "UF-4200 Mass Drivers",
+          "mount_name": "UF-4200 Mass Driver Turret Starboard",
+          "count": 1,
+          "arc": "F/S(R)",
+          "added_keywords": ["Linked-1"],
+          "overrides": {}
+        },
+        {
+          "weapon_id": "UF-6400 Mass Drivers",
+          "mount_name": "UF-6400 Mass Driver Turret 1",
+          "count": 1,
+          "arc": "F/S",
+          "added_keywords": ["Linked-1"],
+          "overrides": {}
+        },
+        {
+          "weapon_id": "UF-6400 Mass Drivers",
+          "mount_name": "UF-6400 Mass Driver Turret 2",
+          "count": 1,
+          "arc": "F/S",
+          "added_keywords": {},
+          "overrides": {}
+        },
+        {
+          "weapon_id": "Shark Missile Bays",
+          "mount_name": "Shark Missile Bays",
+          "count": 1,
+          "arc": "F/S/R",
+          "added_keywords": ["Close Action"],
+          "overrides": {}
+        }
+      ],
+      "tags": ["Heavy Cruiser", "Mass Drivers", "UCM"]
+    },
+    {
+      "id": "UCM-Toulon",
+      "name": "Toulon",
+      "faction": "UCM",
+      "class": "Frigate",
+      "points": 35,
+      "tonnage": "L",
+      "group_size": "2-4",
+      "scan": 6,
+      "signature": 3,
+      "thrust": 10,
+      "hull": 20,
+      "shields": { "front": 4, "side": 4, "rear": 2 },
+      "armor": { "front": 10, "side": 10, "rear": 8 },
+      "pd": 3,
+      "evasion": 3,
+      "defense_tokens": {"evade": 1, "redirect3": 1, "evade4": 1},
+      "launch_assets": {},
+      "special_rules": {},
+      "weapon_mounts": [
+        {
+          "weapon_id": "UF-2200 Mass Drivers",
+          "mount_name": "UF-2200 Mass Driver Turret",
+          "count": 1,
+          "arc": "F/S",
+          "added_keywords": ["Squadron(3)"],
+          "overrides": {}
+        },
+        {
+          "weapon_id": "Barracuda Missile Bays",
+          "mount_name": "Barracuda Missile Bays",
+          "count": 1,
+          "arc": "F/S/R",
+          "added_keywords": [],
+          "overrides": {}
+        }
+      ],
+      "tags": ["escort", "cheap"]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "weapons": [
+    {
+      "id": "ucm-heavy-beam-battery",
+      "name": "Heavy beam battery",
+      "lock": 3,
+      "attacks": 4,
+      "damage": 4,
+      "ap": 0,
+      "notes": "Energy — good vs lighter hulls.",
+      "keywords": ["energy", "beam"]
+    },
+    {
+      "id": "ucm-torpedo-salvo",
+      "name": "Torpedo salvo",
+      "lock": 4,
+      "attacks": 2,
+      "damage": 6,
+      "ap": 3,
+      "notes": "Heavy — spike threat."
+    },
+    {
+      "id": "ucm-medium-rail-turret",
+      "name": "Medium rail turret",
+      "lock": 3,
+      "attacks": 3,
+      "damage": 3,
+      "ap": 2,
+      "notes": "Turret — flexible arcs on mount."
+    },
+    {
+      "id": "ucm-light-battery",
+      "name": "Light battery",
+      "lock": 2,
+      "attacks": 2,
+      "damage": 2,
+      "ap": 1,
+      "notes": "Cheap escort fire."
+    },
+    {
+      "id": "phr-particle-lance",
+      "name": "Particle lance",
+      "lock": 3,
+      "attacks": 2,
+      "damage": 7,
+      "ap": 2,
+      "notes": "Narrow arc, high payoff."
+    },
+    {
+      "id": "phr-broadside-emitters",
+      "name": "Broadside emitters",
+      "lock": 3,
+      "attacks": 4,
+      "damage": 3,
+      "ap": 1,
+      "notes": "Port/starboard weight."
+    },
+    {
+      "id": "phr-twin-particle",
+      "name": "Twin particle cannons",
+      "lock": 3,
+      "attacks": 3,
+      "damage": 4,
+      "ap": 2,
+      "notes": "Cruiser-grade forward punch."
+    },
+    {
+      "id": "phr-emitter-array",
+      "name": "Emitter array",
+      "lock": 2,
+      "attacks": 2,
+      "damage": 2,
+      "ap": 1,
+      "notes": "Frigate flexible arcs."
+    }
+  ]
+}

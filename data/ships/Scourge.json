@@ -1,0 +1,163 @@
+{
+  "faction_id": "Scourge",
+  "faction_name": "Scourge",
+  "ships": [
+    {
+      "id": "Scourge-Daemon",
+      "name": "Daemon",
+      "faction": "Scourge",
+      "class": "Battleship",
+      "points": 260,
+      "tonnage": "S",
+      "group_size": "1",
+      "scan": 8,
+      "signature": 10,
+      "thrust": 8,
+      "hull": 90,
+      "shields": { "front": 25, "side": 20, "rear": 12 },
+      "armor": { "front": 15, "side": 14, "rear": 12 },
+      "pd": 12,
+      "evasion": -1,
+      "defense_tokens": {"brace": 1, "redirect": 2, "contain": 1},
+      "launch_assets": {"Bulk Landers": 4},
+      "special_rules": {},
+      "weapon_mounts": [
+        {
+          "weapon_id": "Oculus Beam Array",
+          "mount_name": "Oculus Beam Array",
+          "count": 1,
+          "arc": "F",
+          "added_keywords": ["Scald", "Linked-1"],
+          "overrides": {}
+        },
+        {
+          "weapon_id": "Oculus Beam Phalanx",
+          "mount_name": "Oculus Beam Phalanx Port",
+          "count": 1,
+          "arc": "F/S(L)",
+          "added_keywords": ["Scald", "Linked-1"],
+          "overrides": {}
+        },
+        {
+          "weapon_id": "Oculus Beam Phalanx",
+          "mount_name": "Oculus Beam Phalanx Starboard",
+          "count": 1,
+          "arc": "F/S(R)",
+          "added_keywords": ["Scald", "Linked-1"],
+          "overrides": {}
+        },
+        {
+          "weapon_id": "Furnace Fangs",
+          "mount_name": "Furnace Fangs",
+          "count": 1,
+          "arc": "F(N)",
+          "added_keywords": ["Corruptor", "Flash", "Burnthrough(10)"],
+          "overrides": {}
+        },
+        {
+          "weapon_id": "Plasma Cyclone",
+          "mount_name": "Plasma Cyclone",
+          "count": 1,
+          "arc": "F/S/R",
+          "added_keywords": ["Scald", "Close Action"],
+          "overrides": {}
+        }
+      ],
+      "tags": ["Battleship", "Oculus", "Burnthrough", "Corruptor", "Scourge"]
+    },
+    {
+      "id": "Scourge-Shenlong",
+      "name": "Shenlong",
+      "faction": "Scourge",
+      "class": "Heavy Cruiser",
+      "points": 160,
+      "tonnage": "H",
+      "group_size": "1",
+      "scan": 6,
+      "signature": 8,
+      "thrust": 8,
+      "hull": 60,
+      "shields": { "front": 16, "side": 16, "rear": 8 },
+      "armor": { "front": 14, "side": 13, "rear": 12 },
+      "pd": 6,
+      "evasion": 0,
+      "defense_tokens": {"brace": 1, "evade": 1, "contain": 2},
+      "launch_assets": {},
+      "special_rules": ["Stealth", "Partial Cloak"],
+      "weapon_mounts": [
+        {
+          "weapon_id": "Oculus Beam Array",
+          "mount_name": "Oculus Beam Array Frontal",
+          "count": 1,
+          "arc": "F",
+          "added_keywords": ["Scald"],
+          "overrides": {}
+        },
+        {
+          "weapon_id": "Oculus Beam Array",
+          "mount_name": "Oculus Beam Array Port",
+          "count": 1,
+          "arc": "F/S(L)",
+          "added_keywords": ["Scald"],
+          "overrides": {}
+        },
+        {
+          "weapon_id": "Oculus Beam Array",
+          "mount_name": "Oculus Beam Array Starboard",
+          "count": 1,
+          "arc": "F/S(R)",
+          "added_keywords": ["Scald"],
+          "overrides": {}
+        },
+        {
+          "weapon_id": "Plasma Storm",
+          "mount_name": "Plasma Storm",
+          "count": 1,
+          "arc": "F/S/R",
+          "added_keywords": ["Scald", "Close Action"],
+          "overrides": {}
+        }
+      ],
+      "tags": ["Heavy Cruiser", "Oculus", "Scald", "Stealth", "Partial Cloak", "Scourge"]
+    },
+    {
+      "id": "Scourge-Harpy",
+      "name": "Harpy",
+      "faction": "Scourge",
+      "class": "Frigate",
+      "points": 39,
+      "tonnage": "L",
+      "group_size": "2-4",
+      "scan": 6,
+      "signature": 3,
+      "thrust": 10,
+      "hull": 20,
+      "shields": { "front": 4, "side": 4, "rear": 3 },
+      "armor": { "front": 9, "side": 9, "rear": 7 },
+      "pd": 4,
+      "evasion": 4,
+      "defense_tokens": {"evade": 1, "contain3": 1, "evade4": 1},
+      "launch_assets": {},
+      "special_rules": ["Atmospheric"],
+      "weapon_mounts": [
+        {
+          "weapon_id": "Oculus Beams",
+          "mount_name": "Oculus Beams",
+          "count": 1,
+          "arc": "F/S",
+          "added_keywords": ["Scald"],
+          "overrides": {}
+        },
+        {
+          "weapon_id": "Plasma Cloud",
+          "mount_name": "Plasma Cloud",
+          "count": 1,
+          "arc": "F/S/R",
+          "added_keywords": ["Scald", "Close Action"],
+          "overrides": {}
+        }
+      ],
+      "tags": ["Frigate", "Oculus", "Scald", "Atmospheric", "Scourge"]
+    }
+  ]
+}

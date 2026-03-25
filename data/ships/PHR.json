@@ -1,0 +1,163 @@
+{
+  "faction_id": "PHR",
+  "faction_name": "Post-Human Republic",
+  "ships": [
+    {
+      "id": "PHR-Heracles",
+      "name": "Heracles",
+      "faction": "PHR",
+      "class": "Battleship",
+      "points": 285,
+      "tonnage": "S",
+      "group_size": "1",
+      "scan": 10,
+      "signature": 10,
+      "thrust": 6,
+      "hull": 120,
+      "shields": { "front": 20, "side": 20, "rear": 10 },
+      "armor": { "front": 17, "side": 18, "rear": 14 },
+      "pd": 10,
+      "evasion": -1,
+      "defense_tokens": {"brace": 1, "redirect": 1, "contain": 2},
+      "launch_assets": {},
+      "special_rules": {},
+      "weapon_mounts": [
+        {
+          "weapon_id": "DMC",
+          "mount_name": "Dark Matter Cannon",
+          "count": 1,
+          "arc": "F(N)",
+          "added_keywords": ["crippling", "Bloom"],
+          "overrides": { "damage": 7 }
+        },
+        {
+          "weapon_id": "Heavy Caliber Broadside Cannonade",
+          "mount_name": "Heavy Caliber Broadside Cannonade Port",
+          "count": 1,
+          "arc": "S(L)",
+          "added_keywords": ["Caliber(H/S)"],
+          "overrides": {}
+        },
+        {
+          "weapon_id": "Heavy Caliber Broadside Cannonade",
+          "mount_name": "Heavy Caliber Broadside Cannonade Starboard",
+          "count": 1,
+          "arc": "S(R)",
+          "added_keywords": ["Caliber(H/S)"],
+          "overrides": {}
+        },
+        {
+          "weapon_id": "Hornet Drones",
+          "mount_name": "Hornet Drones",
+          "count": 1,
+          "arc": "F/S/R",
+          "added_keywords": ["Close Action"],
+          "overrides": {}
+        }
+      ],
+      "tags": ["Battleship", "DMC", "Broadside", "Heavy Caliber", "Crippling", "Hornet Drones", "PHR", "Tank"]
+    },
+    {
+      "id": "PHR-Hector",
+      "name": "Hector",
+      "faction": "PHR",
+      "class": "Heavy Cruiser",
+      "points": 155,
+      "tonnage": "H",
+      "group_size": "1",
+      "scan": 8,
+      "signature": 6,
+      "thrust": 7,
+      "hull": 75,
+      "shields": { "front": 15, "side": 15, "rear": 5 },
+      "armor": { "front": 15, "side": 16, "rear": 13 },
+      "pd": 5,
+      "evasion": 0,
+      "defense_tokens": {"brace": 1, "redirect": 1, "contain": 2},
+      "launch_assets": {},
+      "special_rules": {},
+      "weapon_mounts": [
+        {
+          "weapon_id": "Twin Supernova Laser",
+          "mount_name": "Twin Supernova Laser",
+          "count": 1,
+          "arc": "F(N)",
+          "added_keywords": ["Burnthrough (8), Flash"],
+          "overrides": {}
+        },
+        {
+          "weapon_id": "Medium Caliber Broadside",
+          "mount_name": "Medium Caliber Broadside Port",
+          "count": 1,
+          "arc": "S(L)",
+          "added_keywords": ["Linked-1", "Fusillade"],
+          "overrides": {}
+        },
+        {
+          "weapon_id": "Medium Caliber Broadside",
+          "mount_name": "Medium Caliber Broadside Starboard",
+          "count": 1,
+          "arc": "S(R)",
+          "added_keywords": ["Linked-1", "Fusillade"],
+          "overrides": {}
+        },
+        {
+          "weapon_id": "Wasp Drones",
+          "mount_name": "Wasp Drones",
+          "count": 1,
+          "arc": "F/S/R",
+          "added_keywords": ["Close Action"],
+          "overrides": {}
+        }
+      ],
+      "tags": ["Heavy Cruiser", "Supernova Laser", "Broadside", "Medium Caliber", "Wasp Drones", "PHR", "Tank", "Burnthrough", "Flash"]
+    },
+    {
+      "id": "PHR-Europa",
+      "name": "Europa",
+      "faction": "PHR",
+      "class": "Frigate",
+      "points": 40,
+      "tonnage": "L",
+      "group_size": "2-4",
+      "scan": 8,
+      "signature": 3,
+      "thrust": 10,
+      "hull": 25,
+      "shields": { "front": 3, "side": 3, "rear": 2 },
+      "armor": { "front": 12, "side": 12, "rear": 8 },
+      "pd": 3,
+      "evasion": 3,
+      "defense_tokens": {"evade": 1, "contain3": 1, "evade4": 1},
+      "launch_assets": {},
+      "special_rules": {},
+      "weapon_mounts": [
+        {
+          "weapon_id": "Medium Caliber Bank",
+          "mount_name": "Medium Caliber Bank Port",
+          "count": 1,
+          "arc": "S(L)",
+          "added_keywords": ["Linked-1"],
+          "overrides": {}
+        },
+        {
+          "weapon_id": "Medium Caliber Bank",
+          "mount_name": "Medium Caliber Bank Starboard",
+          "count": 1,
+          "arc": "S(R)",
+          "added_keywords": ["Linked-1"],
+          "overrides": {}
+        },
+        {
+          "weapon_id": "Mosquito Drones",
+          "mount_name": "Mosquito Drones",
+          "count": 1,
+          "arc": "F/S/R",
+          "added_keywords": ["Close Action"],
+          "overrides": {}
+        }
+      ],
+      "tags": ["Frigate", "Medium Caliber", "Broadside", "PHR", "Swarm"]
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "faction_id": "Shaltari",
+  "faction_name": "Shaltari",
+  "ships": [
+    {
+      "id": "Shaltari-Diamond",
+      "name": "Diamond",
+      "faction": "Shaltari",
+      "class": "Battleship",
+      "points": 290,
+      "tonnage": "S",
+      "group_size": "1",
+      "scan": 12,
+      "signature": "4/20",
+      "thrust": 8,
+      "hull": 72,
+      "shields": { "front": 30, "side": 20, "rear": 12 },
+      "armor": { "front": 15.16, "side": 14.15, "rear": 13.12 },
+      "pd": 12,
+      "evasion": -1,
+      "defense_tokens": {"brace": 1, "redirect": 2},
+      "launch_assets": {"Gates": 1},
+      "special_rules": ["Launch", "Shield Mode"],
+      "weapons": [
+        {
+          "weapon_id": "Disintegrator Battery",
+          "mount_name": "Disintegrator Battery Port",
+          "count": 1,
+          "arc": "F/S(L)",
+          "added_keywords": {},
+          "overrides": {}
+        },
+        {
+          "weapon_id": "Disintegrator Battery",
+          "mount_name": "Disintegrator Battery Starboard",
+          "count": 1,
+          "arc": "F/S(R)",
+          "added_keywords": {},
+          "overrides": {}
+        },
+        {
+          "weapon_id": "Particle Lance Triad",
+          "mount_name": "Particle Lance Triad",
+          "count": 1,
+          "arc": "F(N)",
+          "added_keywords": ["Particle", "Bloom", "Crippling", "Fusillade"],
+          "overrides": {}
+        },
+        {
+          "weapon_id": "Harpoon Torrent",
+          "mount_name": "Harpoon Torrent",
+          "count": 1,
+          "arc": "F/S/R",
+          "added_keywords": ["Close Action"],
+          "overrides": {}
+        }
+      ],
+      "tags": ["Battleship", "Disintegrator Battery", "Crippling", "F(N)","Shaltari", "Tank"]
+    },
+    {
+      "id": "Shaltari-Obsidian",
+      "name": "Obsidian",
+      "faction": "Shaltari",
+      "class": "Heavy Cruiser",
+      "points": 140,
+      "tonnage": "H",
+      "group_size": "1",
+      "scan": 12,
+      "signature": "3/16",
+      "thrust": 8,
+      "hull": 44,
+      "shields": { "front": 20, "side": 18, "rear": 10 },
+      "armor": { "front": 14.15, "side": 13.14, "rear": 10.10 },
+      "pd": 9,
+      "evasion": 0,
+      "defense_tokens": {"redirect": 2, "evade": 1},
+      "launch_assets": {},
+      "special_rules": ["Shield Mode"],
+      "weapon_mounts": [
+        {
+          "weapon_id": "Particle Lance",
+          "mount_name": "Particle Lance",
+          "count": 2,
+          "arc": "F(N)",
+          "added_keywords": ["Particle", "Linked-1", "Fusillade"],
+          "overrides": {}
+        },
+        {
+          "weapon_id": "Particle Lance",
+          "mount_name": "Particle Lance 3",
+          "count": 1,
+          "arc": "F(N)",
+          "added_keywords": ["Particle", "Fusillade"],
+          "overrides": {}
+        },
+        {
+          "weapon_id": "Harpoon Cascade",
+          "mount_name": "Harpoon Cascade",
+          "count": 1,
+          "arc": "F/S/R",
+          "added_keywords": ["Close Action"],
+          "overrides": {}
+        }
+      ],
+      "tags": ["Heavy Cruiser", "Particle Lance", "F(N)", "WF", "Shaltari"]
+    },
+    {
+      "id": "Shaltari-Topaz",
+      "name": "Topaz",
+      "faction": "Shaltari",
+      "class": "Frigate",
+      "points": 37,
+      "tonnage": "L",
+      "group_size": "2-4",
+      "scan": 12,
+      "signature": "2/12",
+      "thrust": 12,
+      "hull": 12,
+      "shields": { "front": 4, "side": 8, "rear": 2 },
+      "armor": { "front": 8.10, "side": 8.9, "rear": 6.7 },
+      "pd": 6,
+      "evasion": 4,
+      "defense_tokens": {"evade": 1, "redirect3": 1, "evade4": 1},
+      "launch_assets": {},
+      "special_rules": ["Shield Mode"],
+      "weapon_mounts": [
+        {
+          "weapon_id": "Disintegrator Bank",
+          "mount_name": "Disintegrator Bank",
+          "count": 1,
+          "arc": "F",
+          "added_keywords": {},
+          "overrides": {}
+        },
+        {
+          "weapon_id": "Harpoon Volley",
+          "mount_name": "Harpoon Volley",
+          "count": 1,
+          "arc": "F/S/R",
+          "added_keywords": ["Close Action"],
+          "overrides": {}
+        }
+      ],
+      "tags": ["Frigate", "Disintegrator", "Evasion", "Shaltari"]
+    }
+  ]
+}
