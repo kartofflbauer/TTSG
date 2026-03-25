@@ -225,6 +225,9 @@ def main() -> None:
         k1.metric("Fleet points", f"{pts} / {cap_str}")
         k2.metric("Fleet entries", ec)
         k3.metric("Ship models", models)
+        st.caption(
+            "Model total uses the **upper** bound when `group_size` is a range (e.g. 2–4 → 4 models per entry)."
+        )
 
         fname = st.text_input("Fleet name", value=fleet.name, key="fleet_name_input")
         fleet.name = fname

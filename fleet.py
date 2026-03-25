@@ -20,6 +20,42 @@ from dataclasses import dataclass, field
 from typing import Any
 
 
+def group_size_bounds(raw: Any) -> tuple[int, int]:
+    """
+    Parse `group_size` from ship data into inclusive (low, high).
+
+    Supports: int/float; numeric strings ("1"); ranges ("2-4", en/em dash variants).
+    Invalid values fall back to (1, 1).
+    """
+    if raw is None:
+        return (1, 1)
+    if isinstance(raw, bool):
+        return (1, 1)
+    if isinstance(raw, (int, float)):
+        n = max(1, int(raw))
+        return (n, n)
+    s = str(raw).strip().replace("–", "-").replace("—", "-")
+    if "-" in s:
+        left, _, right = s.partition("-")
+        try:
+            lo = max(1, int(left.strip()))
+            hi = max(lo, int(right.strip()))
+            return (lo, hi)
+        except ValueError:
+            return (1, 1)
+    try:
+        n = max(1, int(float(s)))
+        return (n, n)
+    except ValueError:
+        return (1, 1)
+
+
+def models_per_fleet_entry(ship: dict[str, Any]) -> int:
+    """Models counted per roster line when summing fleet model totals (uses max of a range)."""
+    _lo, hi = group_size_bounds(ship.get("group_size"))
+    return hi
+
+
 def _new_entry_id() -> str:
     return str(uuid.uuid4())
 
@@ -69,8 +105,7 @@ class Fleet:
             ship = ship_by_id.get(e.ship_id)
             if not ship:
                 continue
-            gs = int(ship.get("group_size", 1) or 1)
-            n += e.quantity * gs
+            n += e.quantity * models_per_fleet_entry(ship)
         return n
 
     def total_points(self, ship_by_id: dict[str, dict[str, Any]]) -> int:
