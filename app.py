@@ -121,10 +121,10 @@ def main() -> None:
         st.stop()
 
     st.title("TTSG Fleetbuilder")
-    st.caption(
-        "Data-driven roster builder — ships in `data/ships/`, shared weapons in `data/weapons.json`, "
-        "mounts per hull reference weapons by id (see `weapon_resolver.py`)."
-    )
+    #st.caption(
+    #    "Data-driven roster builder — ships in `data/ships/`, shared weapons in `data/weapons.json`, "
+    #    "mounts per hull reference weapons by id (see `weapon_resolver.py`)."
+    #)
 
     fleet: Fleet = st.session_state.fleet
 
